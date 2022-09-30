@@ -1,0 +1,137 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0% 14%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.one-column{
+    width: 100%;
+}
+
+.two-column{
+    width: 50%;
+    float: left;
+}
+
+.five-column{
+    width: 20%;
+    float: left;
+}
+
+/* Estilos menu navegación */
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+    width: 100%;
+}
+
+.header img {
+    width: 100px;
+    float: left;
+}
+
+.header a {
+    float: right;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    width: 100%;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+}
+
+.carta img{
+    width: 90%;
+}
+
+/*ESTILOS SLIDER*/
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 80%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
