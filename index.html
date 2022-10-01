@@ -14,19 +14,13 @@
 </head>
 
 <body>
-    <!--Menú navegación-->
-    <ul id="nav">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#quien">Quienes somos</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#horario">Horario</a></li>
-        <li><a href="#fotos">Fotos</a></li>
-    </ul>
     <!--Encabezado con logo numero de telefono y whatsapp-->
     <div class="row">
         <div class="one-column">
             <div class="header" id="inicio">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <img src="img/logo2.png" alt="logo2" class="logo2">
+                <h1>Bar Restaurante Almansa</h1>
                 <a href="tel:+32333789010" class="fa-solid fa-square-phone"></a>
                 <a href="https://api.whatsapp.com/send?phone=333789010" class="fa-brands fa-square-whatsapp"></a>
             </div>
@@ -61,10 +55,12 @@
             <script src="js/js.js"></script>
         </div>
     </div>
-    <!--Texto 1-->
+    <br>
+    <!--Texto-->
     <div class="row" id="quien">
         <div class="one-column">
             <div class="texto">
+                <h1>Sobre nosotros</h1>
                 <p>
                     Almansa es un espacio que fundamos con la idea de disfrutar de los pequeños
                     placeres que nos hacen felices: la cerveza, los amigos, los buenos snacks y la
@@ -81,7 +77,8 @@
     </div>
     <br>
     <!--Imagen carta-->
-    <div class="row" id="menu">
+    <div class="row" id="carta">
+        <h1>Carta</h1>
         <div class="two-column">
             <div class="carta" id="carta1">
                 <img src="img/menu1.jpg" alt="carta">
@@ -90,43 +87,77 @@
         <div class="two-column">
             <div class="carta" id="carta2">
                 <img src="img/menu2.jpg" alt="carta">
+            </div><br>
+        </div>
+        <div class="descarga">
+            <a href="img/MenuAlmansa.pdf" download><button type="button">Descarga nuestra carta</button></a>
+        </div>
+    </div>
+    <br>
+    <!--Imagen horario-->
+    <div class="row">
+        <div class="horario">
+            <h1>Horario</h1>
+            <div class="two-column">
+                <img src="img/horario.JPG" alt="horario">
+            </div>
+            <div class="two-column">
+                <p>Abrimos de martes a domingo</p>
+                <p>Lunes cerrado</p>
             </div>
         </div>
-        <a href="img/MenuAlmansa.pdf" download><button type="button">Descarga nuestro menú</button></a>
     </div>
-    <!--Imagen horario-->
-    <div class="row" id="horario">
-        <div class="two-column">
-            <img src="img/logo.png" alt="horario">
-        </div>
-        <div class="two-column">
-            <p>Abrimos de martes a domingo</p>
-            <p>Lunes cerrado</p>
-        </div>
-    </div>
+    <br>
     <!--Seccion con fotos-->
-    <div class="row" id="fotos">
-        <div class="five-column">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="five-column">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="five-column">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="five-column">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="five-column">
-            <img src="img/logo.png" alt="">
+    <div class="row">
+        <div class="platos">
+            <h1>Algunos de nuestros platos</h1>
+            <div class="six-column">
+                <img src="img/plato1.jpg" alt="plato1">
+            </div>
+            <div class="six-column">
+                <img src="img/plato2.jpg" alt="plato2">
+            </div>
+            <div class="six-column">
+                <img src="img/plato3.jpg" alt="plato3">
+            </div>
+            <div class="six-column">
+                <img src="img/plato4.jpg" alt="plato4">
+            </div>
+            <div class="six-column">
+                <img src="img/plato5.jpg" alt="plato5">
+            </div>
+            <div class="six-column">
+                <img src="img/plato6.jpg" alt="plato6">
+            </div>
         </div>
     </div>
+    <br>
     <!--Footer-->
     <div class="row">
-        <div class="">
-            <div class="footer">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.758829012616!2d2.2961905154329587!3d41.61772657924363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1664475697475!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info">
+            <h1>Información de contacto</h1>
+            <div class="two-column">
+                <h2>Ubicación</h2>
+                <iframe class="mapa1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.758829012616!2d2.2961905154329587!3d41.61772657924363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1664475697475!5m2!1ses!2ses"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="mapa2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.758829012616!2d2.2961905154329587!3d41.61772657924363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7d4b0974f17%3A0xe51745f0c1df7360!2sCarrer%20del%20Bosc%2C%2008521%20Bellavista%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1664475697475!5m2!1ses!2ses"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="two-column">
+                <h2>Contacto</h2>
+                <p class="info2">Correo:</p>
+                <p>almansa@mail.com</p>
+                <br>
+                <p class="info2">Teléfono:</p>
+                <p>+34 671 853 673</p>
+                <br>
+                <p class="info2">Dirección:</p>
+                <p>Carrer del Bosc, 08521 Bellavista, Barcelona</p>
             </div>
         </div>
     </div>

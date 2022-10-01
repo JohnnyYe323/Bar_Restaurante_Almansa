@@ -12,57 +12,36 @@ body {
     clear: both;
 }
 
-.one-column{
+.one-column {
     width: 100%;
 }
 
-.two-column{
+.two-column {
     width: 50%;
     float: left;
 }
 
-.five-column{
-    width: 20%;
+.six-column {
+    width: 16.6%;
     float: left;
-}
-
-/* Estilos menu navegación */
-html {
-    scroll-behavior: smooth;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    z-index: 1;
-}
-
-li {
-    float: left;
-    width: 20%;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-
-li a:hover {
-    color: gray;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header {
     width: 100%;
 }
 
-.header img {
+.logo {
     width: 100px;
     float: left;
+}
+
+.logo2 {
+    display: none;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 40px;
 }
 
 .header a {
@@ -70,6 +49,9 @@ li a:hover {
     font-size: 50px;
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider {
@@ -81,8 +63,38 @@ li a:hover {
     justify-content: center;
 }
 
-.carta img{
+.carta img {
     width: 90%;
+}
+
+.descarga{
+    text-align: center;
+}
+
+.horario h1{
+    text-align: center;
+}
+
+.horario img{
+    float: right;
+    width: 40%;
+    padding: 0% 5% 0% 0%;
+}
+
+.platos img{
+    width: 100%;
+}
+
+.info p{
+    margin: 0;
+}
+
+.info2{
+    font-weight: bold;
+}
+
+.mapa2 {
+    display: none;
 }
 
 /*ESTILOS SLIDER*/
@@ -91,7 +103,7 @@ li a:hover {
 }
 
 .mySlides img {
-    width: 80%;
+    width: 100%;
 }
 
 img {
@@ -133,5 +145,40 @@ img {
 
     to {
         opacity: 1
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo{
+        display: none;
+    }
+    .logo2 {
+        display: inline-block;
+    }
+    .header h1{
+        display: none;
+    }
+    .two-column{
+        width: 100%;
+    }
+    .carta img{
+        width: 100%;
+    }
+    .horario img{
+        width: 60%;
+        float: none;
+    }
+    .six-column{
+        width: 50%;
+    }
+    .info iframe{
+        width: 200;
+        height: 200;
+    }
+    .mapa1 {
+        display: none;
+    }
+    .mapa2{
+        display: inline-block;
     }
 }
